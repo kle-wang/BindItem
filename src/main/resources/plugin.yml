@@ -1,0 +1,9 @@
+name: Binditem
+version: '${project.version}'
+main: kaile.plugin.binditem.Binditem
+api-version: 1.16
+authors: [ kaile ]
+description: bind your item
+commands:
+  bind:
+    usage: /bind
