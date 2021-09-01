@@ -39,6 +39,13 @@ public final class Binditem extends JavaPlugin implements Listener {
             return;
         }
         ItemMeta id=item.getItemMeta();
+        if(id==null){
+            return;
+    }
+        if(!id.hasLore())
+        {
+            return;
+        }
         itemlore.addAll(id.getLore());
         String Itemlorestring=String.join(",",itemlore);
         if(id.hasLore()){
